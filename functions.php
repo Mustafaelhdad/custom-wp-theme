@@ -22,3 +22,16 @@ function university_features() {
 }
 
 add_action( 'after_setup_theme', 'university_features' );
+
+// Function file is not the best place to keep custom post types
+// function university_post_types() {
+//   register_post_type('event', array(
+//     'public' => true,
+//     'labels' => array(
+//       'name' => 'Events'
+//     ),
+//     'menu_icon' => 'dashicons-calendar'
+//   ));
+// }
+
+// add_action( 'init', 'university_post_types');
